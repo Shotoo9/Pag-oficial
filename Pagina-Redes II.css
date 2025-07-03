@@ -1,0 +1,219 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #0d1b2a;
+  color: #e0f7fa;
+  padding: 0;
+}
+
+.contenedor-principal {
+  flex: 1;
+}
+
+body.subpagina {
+  background-color: #0a3c4c;
+  background-image: none;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 20px;
+  font-size: 20px;
+  color: #e0f7fa;
+  text-decoration: none;
+  border: 2px solid #00bcd4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #00bcd4;
+  color: #0d1b2a;
+}
+
+body.subpagina nav a {
+  background-color: #0d4d5f;
+}
+
+body.subpagina nav a:hover {
+  background-color: #00bcd4;
+  color: #0d1b2a;
+}
+
+.submenu {
+  position: absolute;
+  background-color: #0d1b2a;
+  display: none;
+  flex-direction: column;
+  top: 40px;
+  min-width: 150px;
+  border: 1px solid #00bcd4;
+  z-index: 10;
+}
+
+.submenu a {
+  padding: 10px;
+  text-align: left;
+  color: #e0f7fa;
+  border-bottom: 1px solid #00bcd4;
+}
+
+.submenu a:hover {
+  background-color: #00bcd4;
+  color: #0d1b2a;
+}
+
+.menu-item:hover .submenu {
+  display: flex;
+}
+
+.subnombre {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: -14px;
+  margin-left: -20px;
+}
+
+/* INTRODUCCION */
+.introduccion {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.6;
+  background-color: #112b3c;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+}
+
+.subpagina .introduccion {
+  background-color: #0d4d5f;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+}
+
+.introduccion h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+.introduccion p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* ENCABEZADO */
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('fondo2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 115px;
+  padding: 0 30px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.logo img {
+  height: 130px;
+  width: auto;
+  margin-top: 10px;
+  margin-left: -15px;
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.nombre {
+  margin-left: -8px;
+  font-size: 80px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* MENU CUADRADOS */
+.menu-cuadraditos {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.menu-cuadraditos a {
+  background-color: #005f73;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.menu-cuadraditos a:hover {
+  background-color: #0a9396;
+}
+
+.menu-item .submenu {
+  display: none;
+  position: absolute;
+  background-color: #005f73;
+  padding: 10px;
+  border-radius: 6px;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  min-width: 150px;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.menu-item .submenu a {
+  display: block;
+  padding: 5px 10px;
+  margin: 3px 0;
+  color: white;
+  font-weight: normal;
+}
+
+.menu-item .submenu a:hover {
+  background-color: #0a9396;
+}
+
+/* FOOTER */
+.pie-pagina {
+  background-color: #0d1b2a;
+  color: #e0f7fa;
+  padding: 20px 30px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.copyright {
+  border-top: 1px solid #00bcd4;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #80deea;
+}
