@@ -1,0 +1,127 @@
+body { 
+  font-family: Arial, sans-serif;
+  background-color: #0d1b2a;
+  color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+}
+.menu-cuadraditos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.menu-cuadraditos a {
+  background-color: #005f73;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-cuadraditos a:hover {
+  background-color: #0a9396;
+}
+.descripcion-cable p {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #112b3c;
+  color: #e0f7fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+}
+/* Submenús */
+.menu-item {
+  position: relative;
+}
+
+.menu-item .submenu {
+  display: none;
+  position: absolute;
+  background-color: #005f73;
+  padding: 10px;
+  border-radius: 6px;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  min-width: 200px;
+  flex-direction: column;
+}
+
+.menu-item .submenu a {
+  display: block;
+  padding: 8px 10px;
+  margin: 2px 0;
+  font-weight: normal;
+  color: white;
+}
+
+.menu-item .submenu a:hover {
+  background-color: #0a9396;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.subpagina-contenido {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #112b3c;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.2);
+  line-height: 1.6;
+}
+
+.subpagina-contenido h1,
+.subpagina-contenido h2 {
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.subpagina-contenido p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.boton-volver {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  color: #e0f7fa;
+  background-color: transparent;
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #00bcd4;
+  color: #0d1b2a;
+}
+
+.subpagina-contenido img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+.subpagina-contenido img.imagen-persona {
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
